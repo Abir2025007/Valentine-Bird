@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Diary 📖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>📖 Our Love Diary</h2>
+<p id="date"></p>
+
+<textarea id="text" placeholder="আজকের অনুভূতি লিখো..."></textarea>
+<br>
+<button onclick="save()">💾 Save</button>
+<a href="index.html">⬅ Back</a>
+
+<script>
+const d = new Date().toLocaleDateString('bn-BD');
+document.getElementById('date').innerText = d;
+
+const t = document.getElementById('text');
+t.value = localStorage.getItem('VB_DIARY') || '';
+
+function save(){
+  localStorage.setItem('VB_DIARY', t.value);
+  alert('💖 Saved');
+}
+</script>
+</body>
+</html>
