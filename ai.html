@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Love 🤖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>🤖 AI Love Assistant</h2>
+
+<div id="log"></div>
+
+<input id="q" placeholder="কিছু বলো..." />
+<button onclick="ask()">Ask</button>
+<a href="index.html">⬅ Back</a>
+
+<script>
+function speak(text){
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'bn-BD';
+  speechSynthesis.speak(u);
+}
+
+function ask(){
+  const q = document.getElementById('q').value;
+  if(!q) return;
+  const r = "Jan 💖, ভালোবাসা মানে বিশ্বাস আর যত্ন। Boss সবসময় তোমার পাশে।";
+  log.innerHTML += `<p>🧑‍💖 ${q}</p><p>🤖 ${r}</p>`;
+  speak(r);
+  document.getElementById('q').value='';
+}
+</script>
+</body>
+</html>
