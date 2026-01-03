@@ -1,0 +1,19 @@
+
+:root{--a:#ff9a9e;--b:#fad0c4}
+body{
+margin:0;font-family:sans-serif;color:white;
+background:linear-gradient(120deg,var(--a),var(--b));
+text-align:center;min-height:100vh;
+}
+header{padding:20px}
+.cards a{
+display:inline-block;margin:10px;padding:16px 28px;
+background:rgba(255,255,255,.25);
+border-radius:22px;color:#fff;text-decoration:none;
+font-size:18px;transition:.3s
+}
+.cards a:hover{background:#fff;color:#ff4d6d}
+.controls button{
+border:none;border-radius:20px;padding:8px 14px;margin:4px;cursor:pointer
+}
+.quote{font-size:22px;margin-top:20px}
