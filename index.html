@@ -1,41 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <div style="margin-top:30px; text-align:center;">
-
-  <a href="diary.html">📖 Diary</a> |
-  <a href="inbox.html">💌 Inbox</a> |
-  <a href="ai.html">🤖 AI Assistant</a>
-
-</div>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Our Love Space • MASTER</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Valentine Bird 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<h1>💖 Our Love Space</h1>
-<p id="greet"></p>
-<div class="controls">
-<button onclick="theme()">🎨 Theme</button>
-<button onclick="toggleMusic()">🎵 Music</button>
-<button onclick="notifyLove()">🔔 Love</button>
-</div>
-</header>
 
-<nav class="cards">
-<a href="pages/diary.html">📖 Diary</a>
-<a href="pages/inbox.html">💌 Inbox</a>
-<a href="pages/calendar.html">📅 Love Calendar</a>
-<a href="pages/ai.html">🤖 AI Assistant</a>
-</nav>
+  <!-- TOP NAVIGATION -->
+  <div style="margin-top:30px; text-align:center;">
+    <a href="diary.html">📖 Diary</a> |
+    <a href="inbox.html">💌 Inbox</a> |
+    <a href="ai.html">🤖 AI Assistant</a>
+  </div>
 
-<section class="quote" id="quote"></section>
+  <!-- HEADER -->
+  <header>
+    <h1>💖 Our Love Space</h1>
+    <p id="greet"></p>
 
-<audio id="bgm" autoplay loop>
-<source src="assets/music.mp3" type="audio/mpeg">
-</audio>
+    <div class="controls">
+      <button onclick="theme()">🎨 Theme</button>
+      <button onclick="toggleMusic()">🎵 Music</button>
+      <button onclick="notifyLove()">🔔 Love</button>
+    </div>
+  </header>
 
-<script src="script.js"></script>
+  <!-- DASHBOARD CARDS -->
+  <nav class="cards">
+    <a href="diary.html">📖 Diary</a>
+    <a href="inbox.html">💌 Inbox</a>
+    <a href="calendar.html">📅 Love Calendar</a>
+    <a href="ai.html">🤖 AI Assistant</a>
+  </nav>
+
+  <!-- ROMANTIC QUOTE -->
+  <section class="quote" id="quote"></section>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgm" autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
