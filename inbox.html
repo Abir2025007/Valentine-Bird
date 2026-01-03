@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Inbox 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>💌 Our Inbox</h2>
+
+<div id="chat" class="chat"></div>
+
+<input id="msg" placeholder="Samia কে লিখো..." />
+<button onclick="send()">Send</button>
+<a href="index.html">⬅ Back</a>
+
+<script>
+const chat = document.getElementById('chat');
+chat.innerHTML = localStorage.getItem('VB_CHAT') || '';
+
+function send(){
+  const m = document.getElementById('msg');
+  if(!m.value) return;
+  chat.innerHTML += `<p>💖 ${m.value}</p>`;
+  localStorage.setItem('VB_CHAT', chat.innerHTML);
+  m.value='';
+}
+</script>
+</body>
+</html>
